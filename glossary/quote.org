@@ -1,6 +1,6 @@
-ï»¿* Quote
+* Quote
 
-A quote Ã© um recurso que possibilita o armazenamento de um dado sem que ele passe por avaliaÃ§Ã£o. Podemos definir a quote de um elemento que nÃ£o contÃ©m outro elemento dentro dele como o sÃ­mbolo de conteÃºdo igual ao prÃ³prio. E uma quote de um que contenha outros demais elementos em sua forma como a lista das quotes desses respectivos. (uma quote pode representar um dado de praticamente qualquer formato desde que ele possa ser interpretado como um elemento Ãºnico, quer seja ele: uma expressÃ£o, um boolean, um operador, uma lista ou etc)
+A quote é um recurso que possibilita o armazenamento de um dado sem que ele passe por avaliação. Podemos definir a quote de um elemento que não contém outro elemento dentro dele como o símbolo de conteúdo igual ao próprio. E uma quote de um que contenha outros demais elementos em sua forma como a lista das quotes desses respectivos. (uma quote pode representar um dado de praticamente qualquer formato desde que ele possa ser interpretado como um elemento único, quer seja ele: uma expressão, um boolean, um operador, uma lista ou etc)
 
 Fontes:
  
