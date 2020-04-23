@@ -1,7 +1,8 @@
 * Quote
 
-A quote é um recurso que possibilita o armazenamento de um dado sem que ele passe por avaliação. Podemos definir a quote de um elemento que não contém outro elemento dentro dele como o formato literal do próprio. E uma quote que contenha outros demais elementos em sua forma como a lista das quotes desses respectivos. (uma quote pode representar um dado de praticamente qualquer formato desde que ele possa ser interpretado como um elemento único, quer seja ele: uma expressão, um boolean, um operador, uma lista ou etc)
+A quote é um recurso que possibilita o armazenamento de um dado sem que ele passe por avaliação. Podemos definir a quote de um elemento que não contém outro elemento dentro dele como o símbolo de formato igual ao próprio. E uma quote de um que contenha outros demais elementos em sua forma como a lista das quotes desses respectivos. (uma quote pode representar um dado de praticamente qualquer formato desde que ele possa ser interpretado como um elemento único, quer seja ele: uma expressão, um boolean, um operador, uma lista ou etc)
 
-Fontes: 
+Fontes:
+ 
 - https://docs.racket-lang.org/guide/quote.html
 - livro SICP
