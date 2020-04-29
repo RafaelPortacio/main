@@ -17,7 +17,7 @@
         ((is-in? (car lst1) lst2) #t)
         (#t (any-of-in? (cdr lst1) lst2))))
 
-(define (aux-t-sub lsub) ;recebe uma lista de subconjuntos da subsets (lsub) e retorna a lista com a remoção dos subconjuntos repetidos (r-lsub)
+(define (aux-t-sub lsub) ;recebe uma lista de subconjuntos da subsets (lsub) e retorna a lista com a remoção dos subconjuntos repetidos
   
   (filter (λ (x) (not (any-of-in? (permutations (car x)) (cdr x)))) lsub)) ;filter modificado (presente no arquivo funcoes-do-livro.rkt)
 
