@@ -1,12 +1,12 @@
 #lang racket
 
 ;;ctrl C ctrl V de funções do livro que foram úteis pro programa (leve alteraçâo no filter)
-(define (filter predicate sequence)
+(define (filtermod predicate sequence)
   (cond ((null? sequence) null)
         ((predicate sequence) ;diferente do filter tradicional, o predicado recebe toda a sequence
          (cons (car sequence)
-               (filter predicate (cdr sequence))))
-        (else (filter predicate (cdr sequence)))))
+               (filtermod predicate (cdr sequence))))
+        (else (filtermod predicate (cdr sequence)))))
 
 
 (define (accumulate op initial sequence) 
@@ -26,4 +26,4 @@
                       (permutations (remove x s))))
                s)))
 
-(provide filter permutations)
+(provide filtermod permutations)

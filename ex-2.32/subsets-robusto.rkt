@@ -1,6 +1,7 @@
 #lang racket
 (require "funcoes-do-livro.rkt")
 
+
 (define (subsets s)
   (if (null? s)
       (list null)
@@ -8,18 +9,14 @@
         (append rest (map (lambda (x) (cons (car s) x)) rest)))))
 
 (define (is-in? elt lst) ;recebe um elemento e uma lista e responde (com boolean) se o elemento está na lista
-  (cond ((empty? lst) #f)
-        ((equal? (car lst) elt) #t)
-        (#t  (is-in? elt (cdr lst)))))
+  (pair? (filter (λ (x) (equal? x elt)) lst)))
 
 (define (any-of-in? lst1 lst2) ;recebe duas listas e responde (com boolean) se elas tem algum elemento em comum
-  (cond ((empty? lst1) #f)
-        ((is-in? (car lst1) lst2) #t)
-        (#t (any-of-in? (cdr lst1) lst2))))
+  (pair? (filter (λ (x) (is-in? x lst1)) lst2)))
 
 (define (aux-t-sub lsub) ;recebe uma lista de subconjuntos da subsets (lsub) e retorna a lista com a remoção dos subconjuntos repetidos
   
-  (filter (λ (x) (not (any-of-in? (permutations (car x)) (cdr x)))) lsub)) ;filter modificado (presente no arquivo funcoes-do-livro.rkt)
+  (filtermod (λ (x) (not (any-of-in? (permutations (car x)) (cdr x)))) lsub)) ;FILTER MODIFICADO, definição presente no arquivo funcoes-do-livro.rkt
 
 (define (true-subsets l) ;subsets aprimorado
   (aux-t-sub (subsets l)))
