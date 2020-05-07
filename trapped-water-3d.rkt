@@ -1,7 +1,8 @@
 #lang racket
-; autor: Rafael Portácio
-#| trabalharemos com uma ditribuição de números semelhante a uma matriz
-considerações iniciais para ideia utilizada nesse código, note que seria
+#| autor: Rafael Portácio
+ trabalharemos com uma ditribuição de números semelhante a uma matriz.
+
+Considerações iniciais para a ideia utilizada nesse código: note que seria
 impossível que tivessemos uma coluna de água mais alta do que a mais alta coluna da matriz.
 Assim como seria impossível um "bloco" de água não ser cercado pelos 4 lados (pois a água escorreria).
 |#
