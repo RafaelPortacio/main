@@ -42,8 +42,6 @@
 (define (water-amount array) ;DEVOLVE A QUANTIDADE DE ÁGUA ARMAZENADA
   (- (foldr + 0 (after-rain array)) (foldr + 0 array)))
 
-
-
 ;;(water-amount '(2 3 1 2 4))
 ;;(water-amount '(4 5 3 7 1 6 3))
 

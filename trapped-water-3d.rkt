@@ -82,7 +82,7 @@ Assim como seria impossível um "bloco" de água não ser cercado pelos 4 lados 
      (foldr + 0 (map (λ (x) (foldr + 0 x)) k))))
 
 
-(print-mtrx (trapped-water (list (list 9 9 9)
+#|(print-mtrx (trapped-water (list (list 9 9 9)
                                  (list 9 0 9)
                                  (list 9 3 2))))
 
@@ -124,3 +124,4 @@ Assim como seria impossível um "bloco" de água não ser cercado pelos 4 lados 
                     (list 5 3 0 7 0 6 0 5 3)
                     (list 0 0 7 0 0 5 0 8 4)
                     (list 4 0 5 6 4 0 7 1 8)))
+|#
